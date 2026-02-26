@@ -14,10 +14,10 @@ A simple and clean **Task Management System** built using **Core PHP
 
 This application allows users to:
 
--   ✅ Create tasks\
--   📋 View all tasks\
--   ✏️ Update tasks\
--   🗑️ Delete tasks\
+-   ✅ Create tasks
+-   📋 View all tasks
+-   ✏️ Update tasks
+-   🗑️ Delete tasks
 -   🔎 Search tasks
 
 Designed using the **MVC (Model-View-Controller)** pattern for better
@@ -41,27 +41,27 @@ structure and maintainability.
 
 ### 🔹 Model
 
--   Handles database queries\
--   Performs CRUD operations\
--   Contains business logic\
+-   Handles database queries
+-   Performs CRUD operations
+-   Contains business logic
 -   Uses secure PDO prepared statements
 
 ### 🔹 View
 
--   Handles UI (HTML + Bootstrap)\
--   Displays forms and tables\
+-   Handles UI (HTML + Bootstrap)
+-   Displays forms and tables
 -   Manages user interaction
 
 ### 🔹 Controller
 
--   Handles routing\
--   Connects Model and View\
+-   Handles routing
+-   Connects Model and View
 -   Processes user input
 
 ### ✅ Benefits
 
--   Separation of concerns\
--   Better maintainability\
+-   Separation of concerns
+-   Better maintainability
 -   Scalable code structure
 
 ------------------------------------------------------------------------
@@ -89,12 +89,12 @@ structure and maintainability.
 
 ## 🚀 Features
 
--   Add new task\
--   View tasks in tabular format\
--   Edit task\
--   Delete task\
--   Search by title or status\
--   Secure database operations using PDO\
+-   Add new task
+-   View tasks in tabular format
+-   Edit task
+-   Delete task
+-   Search by title or status
+-   Secure database operations using PDO
 -   Responsive UI with Bootstrap
 
 ------------------------------------------------------------------------
@@ -162,37 +162,33 @@ Open:
 
 ## 🔐 Security
 
--   PDO Prepared Statements used\
--   Protection against SQL Injection\
--   No direct SQL string concatenation\
+-   PDO Prepared Statements used
+-   Protection against SQL Injection
+-   No direct SQL string concatenation
 -   Clean MVC separation
 
 ------------------------------------------------------------------------
 
 ## 📈 Future Improvements
 
--   User authentication system\
--   Role-based access control\
--   Pagination\
--   Task filtering by date\
--   REST API version\
+-   User authentication system
+-   Role-based access control
+-   Pagination
+-   Task filtering by date
+-   REST API version
 -   Deployment to live server
 
 ------------------------------------------------------------------------
 
 ## 🎯 Learning Outcomes
 
--   MVC Architecture understanding\
--   Database schema design\
--   CRUD implementation\
--   Secure backend coding\
--   Frontend & backend integration\
+-   MVC Architecture understanding
+-   Database schema design
+-   CRUD implementation
+-   Secure backend coding
+-   Frontend & backend integration
 -   Professional documentation
 
-------------------------------------------------------------------------
 
-## 👩‍💻 Author
 
-**Gargi Singh**\
-Aspiring Full Stack Developer
 
