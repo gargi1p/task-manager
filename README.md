@@ -72,18 +72,18 @@ structure and maintainability.
 
 ### Table: `tasks`
 
-  Column Name   Data Type                  Description
-  ------------- -------------------------- -----------------------------------
-  id            INT (PK, AUTO_INCREMENT)   Unique Task ID
-  title         VARCHAR(255)               Task title
-  description   TEXT                       Task details
-  due_date      DATE                       Deadline
-  status        VARCHAR(50)                Pending / In Progress / Completed
-  remarks       TEXT                       Additional comments
-  created_on    TIMESTAMP                  Record creation time
-  updated_on    TIMESTAMP                  Last update time
-  created_by    VARCHAR(100)               Creator name
-  updated_by    VARCHAR(100)               Last modifier
+| Column Name | Data Type                | Description                       |
+| ----------- | ------------------------ | --------------------------------- |
+| id          | INT (PK, AUTO_INCREMENT) | Unique Task ID                    |
+| title       | VARCHAR(255)             | Task title                        |
+| description | TEXT                     | Task details                      |
+| due_date    | DATE                     | Deadline                          |
+| status      | VARCHAR(50)              | Pending / In Progress / Completed |
+| remarks     | TEXT                     | Additional comments               |
+| created_on  | TIMESTAMP                | Record creation time              |
+| updated_on  | TIMESTAMP                | Last update time                  |
+| created_by  | VARCHAR(100)             | Creator name                      |
+| updated_by  | VARCHAR(100)             | Last modifier                     |
 
 ------------------------------------------------------------------------
 
@@ -195,3 +195,4 @@ Open:
 
 **Gargi Singh**\
 Aspiring Full Stack Developer
+
