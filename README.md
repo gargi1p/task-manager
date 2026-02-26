@@ -1,35 +1,31 @@
-.
-
 📌 Task Management System (PHP MVC)
+
+
+
+
+
+
+
+
+A simple and clean Task Management System built using Core PHP (MVC Architecture), MySQL, and Bootstrap 5.
+
+This project demonstrates strong fundamentals of backend development, database design, and MVC architecture.
+
 📖 Overview
 
-This project is a Task Management System developed using Core PHP (MVC Architecture), MySQL, and Bootstrap 5.
+This application allows users to:
 
-The application allows users to:
+✅ Create tasks
 
-Create tasks
+📋 View all tasks
 
-View all tasks
+✏️ Update tasks
 
-Update tasks
+🗑️ Delete tasks
 
-Delete tasks
+🔎 Search tasks
 
-Search tasks
-
-The project demonstrates understanding of:
-
-MVC Architecture
-
-Database design
-
-CRUD operations
-
-Search functionality
-
-Secure database handling using PDO
-
-Clean UI using Bootstrap
+It is designed following the MVC (Model-View-Controller) pattern to ensure clean structure and maintainability.
 
 🏗️ Technology Stack
 Layer	Technology Used
@@ -37,65 +33,75 @@ Backend	Core PHP (MVC Pattern)
 Database	MySQL
 Frontend	HTML, CSS, Bootstrap 5
 Server	Apache (XAMPP)
-Version Control	GitHub
-🧠 Architecture Used
+Version Control	Git & GitHub
+🧠 Architecture Used – MVC Pattern
 
-This project follows the MVC (Model-View-Controller) pattern.
+This project follows the Model-View-Controller (MVC) architecture.
 
-Model
+🔹 Model
 
-Handles:
+Responsible for:
 
 Database queries
 
-Data operations (CRUD)
+CRUD operations
 
 Business logic
 
-View
+Secure PDO operations
 
-Handles:
+🔹 View
+
+Responsible for:
 
 UI (HTML + Bootstrap)
 
-Forms and tables
+Forms & tables
 
 User interaction
 
-Controller
+🔹 Controller
 
-Handles:
+Responsible for:
 
-Routing
+Routing requests
 
 Connecting Model and View
 
 Processing user input
 
-This structure ensures:
+✅ Benefits of MVC
 
 Separation of concerns
 
-Better maintainability
+Better code organization
 
-Scalable code design
+Easy maintenance
+
+Scalable structure
 
 🗄️ Database Design
-Database Name:
+📌 Database Name:
 task_manager
-Table: tasks
+📌 Table: tasks
 Column Name	Data Type	Description
 id	INT (PK, AUTO_INCREMENT)	Unique Task ID
 title	VARCHAR(255)	Task title
 description	TEXT	Task details
 due_date	DATE	Deadline
-status	VARCHAR(50)	Task status (Pending / In Progress / Completed)
+status	VARCHAR(50)	Pending / In Progress / Completed
 remarks	TEXT	Additional comments
 created_on	TIMESTAMP	Record creation time
 updated_on	TIMESTAMP	Last update time
 created_by	VARCHAR(100)	Creator name
 updated_by	VARCHAR(100)	Last modifier
-ER Diagram (Conceptual)
+🔎 Indexing
+
+id is Primary Key (Automatically Indexed)
+
+Improves search and retrieval performance
+
+🧩 Conceptual ER Structure
 Task
 -------------------------------------
 id (PK)
@@ -108,41 +114,30 @@ created_on
 updated_on
 created_by
 updated_by
-Indexing
+🛠️ Development Approach
+📌 Database-First Approach
 
-id is Primary Key (Automatically Indexed)
+Database schema designed first
 
-Improves search and retrieval performance
+PHP models built based on existing schema
 
-Approach Used
-
-This project uses:
-
-Database First Approach
-
-Reason:
-
-Database structure was designed first.
-
-PHP models were built based on existing schema.
-
-Suitable for small-to-medium applications.
+Suitable for small to medium-scale applications
 
 🚀 Features Implemented
 
-Add new task
+➕ Add new task
 
-View all tasks in tabular format
+📋 View tasks in tabular format
 
-Edit task
+✏️ Edit task
 
-Delete task
+🗑️ Delete task
 
-Search task by title or status
+🔎 Search by title or status
 
-Secure database operations using PDO prepared statements
+🔐 Secure database operations using PDO
 
-Responsive UI using Bootstrap
+📱 Responsive UI with Bootstrap 5
 
 📂 Project Structure
 task-manager/
@@ -174,10 +169,6 @@ Step 2: Move Project
 
 Place the project folder inside:
 
-htdocs/
-
-Example:
-
 C:\xampp\htdocs\task-manager
 Step 3: Create Database
 
@@ -185,7 +176,7 @@ Open phpMyAdmin and run:
 
 CREATE DATABASE task_manager;
 
-Then create tasks table using provided SQL script.
+Then create the tasks table using your SQL script.
 
 Step 4: Configure Database
 
@@ -201,44 +192,45 @@ password: ""
 database: task_manager
 Step 5: Run Project
 
-Open browser and go to:
+Open your browser and go to:
 
 http://localhost/task-manager
 🔐 Security Considerations
 
-PDO Prepared Statements used to prevent SQL Injection
+✅ PDO Prepared Statements used
 
-No direct SQL string concatenation
+✅ Prevents SQL Injection
 
-Basic MVC separation improves maintainability
+✅ No direct SQL concatenation
 
-📈 Possible Improvements
+✅ MVC separation improves structure & safety
 
-User authentication system
+📈 Possible Future Improvements
 
-Role-based access control
+🔑 User authentication system
 
-Pagination
+👥 Role-based access control
 
-Task filtering by date
+📄 Pagination
 
-API version of application
+📅 Task filtering by date
 
-Deployment to live server
+🌐 REST API version
+
+🚀 Deployment to live server
 
 🎯 Learning Outcomes
 
 This project demonstrates:
 
-Understanding of MVC architecture
+✔️ Understanding of MVC architecture
 
-Database schema design
+✔️ Database schema design
 
-CRUD implementation
+✔️ CRUD implementation
 
-Secure backend coding
+✔️ Secure backend coding using PDO
 
-Frontend integration with backend
+✔️ Frontend integration with backend
 
-Project documentation skills
-
+✔️ Professional project documentation
