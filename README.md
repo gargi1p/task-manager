@@ -1,236 +1,197 @@
-📌 Task Management System (PHP MVC)
+# 📌 Task Management System (PHP MVC)
 
+![PHP](https://img.shields.io/badge/PHP-Core-blue)
+![MySQL](https://img.shields.io/badge/Database-MySQL-orange)
+![Bootstrap](https://img.shields.io/badge/Frontend-Bootstrap%205-purple)
+![Architecture](https://img.shields.io/badge/Architecture-MVC-success)
 
+A simple and clean **Task Management System** built using **Core PHP
+(MVC Architecture)**, **MySQL**, and **Bootstrap 5**.
 
+------------------------------------------------------------------------
 
-
-
-
-
-A simple and clean Task Management System built using Core PHP (MVC Architecture), MySQL, and Bootstrap 5.
-
-This project demonstrates strong fundamentals of backend development, database design, and MVC architecture.
-
-📖 Overview
+## 📖 Overview
 
 This application allows users to:
 
-✅ Create tasks
+-   ✅ Create tasks\
+-   📋 View all tasks\
+-   ✏️ Update tasks\
+-   🗑️ Delete tasks\
+-   🔎 Search tasks
 
-📋 View all tasks
+Designed using the **MVC (Model-View-Controller)** pattern for better
+structure and maintainability.
 
-✏️ Update tasks
+------------------------------------------------------------------------
 
-🗑️ Delete tasks
+## 🏗️ Technology Stack
 
-🔎 Search tasks
+  Layer             Technology Used
+  ----------------- ------------------------
+  Backend           Core PHP (MVC Pattern)
+  Database          MySQL
+  Frontend          HTML, CSS, Bootstrap 5
+  Server            Apache (XAMPP)
+  Version Control   Git & GitHub
 
-It is designed following the MVC (Model-View-Controller) pattern to ensure clean structure and maintainability.
+------------------------------------------------------------------------
 
-🏗️ Technology Stack
-Layer	Technology Used
-Backend	Core PHP (MVC Pattern)
-Database	MySQL
-Frontend	HTML, CSS, Bootstrap 5
-Server	Apache (XAMPP)
-Version Control	Git & GitHub
-🧠 Architecture Used – MVC Pattern
+## 🧠 Architecture -- MVC Pattern
 
-This project follows the Model-View-Controller (MVC) architecture.
+### 🔹 Model
 
-🔹 Model
+-   Handles database queries\
+-   Performs CRUD operations\
+-   Contains business logic\
+-   Uses secure PDO prepared statements
 
-Responsible for:
+### 🔹 View
 
-Database queries
+-   Handles UI (HTML + Bootstrap)\
+-   Displays forms and tables\
+-   Manages user interaction
 
-CRUD operations
+### 🔹 Controller
 
-Business logic
+-   Handles routing\
+-   Connects Model and View\
+-   Processes user input
 
-Secure PDO operations
+### ✅ Benefits
 
-🔹 View
+-   Separation of concerns\
+-   Better maintainability\
+-   Scalable code structure
 
-Responsible for:
+------------------------------------------------------------------------
 
-UI (HTML + Bootstrap)
+## 🗄️ Database Design
 
-Forms & tables
+### Database: `task_manager`
 
-User interaction
+### Table: `tasks`
 
-🔹 Controller
+  Column Name   Data Type                  Description
+  ------------- -------------------------- -----------------------------------
+  id            INT (PK, AUTO_INCREMENT)   Unique Task ID
+  title         VARCHAR(255)               Task title
+  description   TEXT                       Task details
+  due_date      DATE                       Deadline
+  status        VARCHAR(50)                Pending / In Progress / Completed
+  remarks       TEXT                       Additional comments
+  created_on    TIMESTAMP                  Record creation time
+  updated_on    TIMESTAMP                  Last update time
+  created_by    VARCHAR(100)               Creator name
+  updated_by    VARCHAR(100)               Last modifier
 
-Responsible for:
+------------------------------------------------------------------------
 
-Routing requests
+## 🚀 Features
 
-Connecting Model and View
+-   Add new task\
+-   View tasks in tabular format\
+-   Edit task\
+-   Delete task\
+-   Search by title or status\
+-   Secure database operations using PDO\
+-   Responsive UI with Bootstrap
 
-Processing user input
+------------------------------------------------------------------------
 
-✅ Benefits of MVC
+## 📂 Project Structure
 
-Separation of concerns
+    task-manager/
+    │
+    ├── config/
+    │   └── database.php
+    │
+    ├── models/
+    │   └── Task.php
+    │
+    ├── controllers/
+    │   └── TaskController.php
+    │
+    ├── views/
+    │   ├── header.php
+    │   ├── footer.php
+    │   ├── task_list.php
+    │   ├── create_task.php
+    │   ├── edit_task.php
+    │
+    ├── index.php
+    └── README.md
 
-Better code organization
+------------------------------------------------------------------------
 
-Easy maintenance
+## ⚙️ Installation Guide
 
-Scalable structure
-
-🗄️ Database Design
-📌 Database Name:
-task_manager
-📌 Table: tasks
-Column Name	Data Type	Description
-id	INT (PK, AUTO_INCREMENT)	Unique Task ID
-title	VARCHAR(255)	Task title
-description	TEXT	Task details
-due_date	DATE	Deadline
-status	VARCHAR(50)	Pending / In Progress / Completed
-remarks	TEXT	Additional comments
-created_on	TIMESTAMP	Record creation time
-updated_on	TIMESTAMP	Last update time
-created_by	VARCHAR(100)	Creator name
-updated_by	VARCHAR(100)	Last modifier
-🔎 Indexing
-
-id is Primary Key (Automatically Indexed)
-
-Improves search and retrieval performance
-
-🧩 Conceptual ER Structure
-Task
--------------------------------------
-id (PK)
-title
-description
-due_date
-status
-remarks
-created_on
-updated_on
-created_by
-updated_by
-🛠️ Development Approach
-📌 Database-First Approach
-
-Database schema designed first
-
-PHP models built based on existing schema
-
-Suitable for small to medium-scale applications
-
-🚀 Features Implemented
-
-➕ Add new task
-
-📋 View tasks in tabular format
-
-✏️ Edit task
-
-🗑️ Delete task
-
-🔎 Search by title or status
-
-🔐 Secure database operations using PDO
-
-📱 Responsive UI with Bootstrap 5
-
-📂 Project Structure
-task-manager/
-│
-├── config/
-│   └── database.php
-│
-├── models/
-│   └── Task.php
-│
-├── controllers/
-│   └── TaskController.php
-│
-├── views/
-│   ├── header.php
-│   ├── footer.php
-│   ├── task_list.php
-│   ├── create_task.php
-│   ├── edit_task.php
-│
-├── index.php
-└── README.md
-⚙️ Installation & Setup Guide
-Step 1: Install XAMPP
+### 1️⃣ Install XAMPP
 
 Download and install XAMPP.
 
-Step 2: Move Project
+### 2️⃣ Move Project
 
-Place the project folder inside:
+Place inside:
 
-C:\xampp\htdocs\task-manager
-Step 3: Create Database
+    C:\xampp\htdocs\task-manager
 
-Open phpMyAdmin and run:
+### 3️⃣ Create Database
 
+``` sql
 CREATE DATABASE task_manager;
+```
 
-Then create the tasks table using your SQL script.
+Then create the `tasks` table using your SQL script.
 
-Step 4: Configure Database
+### 4️⃣ Configure Database
+
+Edit:
+
+    config/database.php
+
+Update credentials if needed.
+
+### 5️⃣ Run Project
 
 Open:
 
-config/database.php
+    http://localhost/task-manager
 
-Update credentials if needed:
+------------------------------------------------------------------------
 
-host: localhost
-username: root
-password: ""
-database: task_manager
-Step 5: Run Project
+## 🔐 Security
 
-Open your browser and go to:
+-   PDO Prepared Statements used\
+-   Protection against SQL Injection\
+-   No direct SQL string concatenation\
+-   Clean MVC separation
 
-http://localhost/task-manager
-🔐 Security Considerations
+------------------------------------------------------------------------
 
-✅ PDO Prepared Statements used
+## 📈 Future Improvements
 
-✅ Prevents SQL Injection
+-   User authentication system\
+-   Role-based access control\
+-   Pagination\
+-   Task filtering by date\
+-   REST API version\
+-   Deployment to live server
 
-✅ No direct SQL concatenation
+------------------------------------------------------------------------
 
-✅ MVC separation improves structure & safety
+## 🎯 Learning Outcomes
 
-📈 Possible Future Improvements
+-   MVC Architecture understanding\
+-   Database schema design\
+-   CRUD implementation\
+-   Secure backend coding\
+-   Frontend & backend integration\
+-   Professional documentation
 
-🔑 User authentication system
+------------------------------------------------------------------------
 
-👥 Role-based access control
+## 👩‍💻 Author
 
-📄 Pagination
-
-📅 Task filtering by date
-
-🌐 REST API version
-
-🚀 Deployment to live server
-
-🎯 Learning Outcomes
-
-This project demonstrates:
-
-✔️ Understanding of MVC architecture
-
-✔️ Database schema design
-
-✔️ CRUD implementation
-
-✔️ Secure backend coding using PDO
-
-✔️ Frontend integration with backend
-
-✔️ Professional project documentation
+**Gargi Singh**\
+Aspiring Full Stack Developer
